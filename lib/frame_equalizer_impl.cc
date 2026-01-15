@@ -223,6 +223,10 @@ int frame_equalizer_impl::general_work(int noutput_items,
                 dict = pmt::dict_add(
                     dict, pmt::mp("encoding"), pmt::from_uint64(d_frame_encoding));
                 dict = pmt::dict_add(
+                    dict, pmt::mp("signal"), pmt::from_double(d_equalizer->get_signal()));
+                dict = pmt::dict_add(
+                    dict, pmt::mp("noise"), pmt::from_double(d_equalizer->get_noise()));
+                dict = pmt::dict_add(
                     dict, pmt::mp("snr"), pmt::from_double(d_equalizer->get_snr()));
                 dict = pmt::dict_add(
                     dict, pmt::mp("nominal frequency"), pmt::from_double(d_freq));

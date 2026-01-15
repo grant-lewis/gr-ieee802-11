@@ -44,6 +44,8 @@ void lms::equalize(gr_complex* in,
             d_H[i] /= LONG[i] * gr_complex(2, 0);
         }
 
+        d_signal = signal;
+        d_noise = noise;
         d_snr = 10 * std::log10(signal / noise / 2);
 
     } else {
@@ -65,4 +67,6 @@ void lms::equalize(gr_complex* in,
     }
 }
 
+double lms::get_signal() { return d_signal; }
+double lms::get_noise() { return d_noise; }
 double lms::get_snr() { return d_snr; }

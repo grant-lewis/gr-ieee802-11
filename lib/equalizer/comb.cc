@@ -81,4 +81,6 @@ void comb::equalize(gr_complex* in,
     }
 }
 
+double comb::get_signal() { return 42; }
+double comb::get_noise() { return 42; }
 double comb::get_snr() { return 42; }

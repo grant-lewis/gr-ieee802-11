@@ -32,7 +32,9 @@ public:
                           gr_complex* symbols,
                           uint8_t* bits,
                           std::shared_ptr<gr::digital::constellation> mod);
-    double get_snr();
+    virtual double get_signal();
+    virtual double get_noise();
+    virtual double get_snr();
 
 private:
     const double alpha = 0.2;

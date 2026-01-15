@@ -33,9 +33,13 @@ public:
                           gr_complex* symbols,
                           uint8_t* bits,
                           std::shared_ptr<gr::digital::constellation> mod);
+    virtual double get_signal();
+    virtual double get_noise();
     virtual double get_snr();
 
 private:
+    double d_signal;
+    double d_noise;
     double d_snr;
 };
 

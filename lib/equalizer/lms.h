@@ -36,7 +36,11 @@ public:
 
 private:
     double get_snr();
-
+    double get_signal();
+    double get_noise();
+    
+    double d_signal;
+    double d_noise;
     double d_snr;
     const double alpha = 0.5;
 };
