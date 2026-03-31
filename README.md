@@ -55,6 +55,7 @@ sudo ldconfig
 
 ```bash
 cd gr-ieee802-11
+gr_modtool bind -u append_crc32
 mkdir build && cd build
 cmake ..
 make
