@@ -1,6 +1,6 @@
-# gr-ieee802-11 (SNR + CSI Fork)
+# gr-ieee802-11 (SNR & CSI Extensions)
 
-This is a fork of [bastibl/gr-ieee802-11](https://github.com/bastibl/gr-ieee802-11) that exposes SNR and CSI as raw bytes appended to the pcap packet output.
+This is a fork of [bastibl/gr-ieee802-11](https://github.com/bastibl/gr-ieee802-11) that exposes Signal, Noise and CSI as raw bytes appended to the pcap packet output.
 
 ## Payload Format
 
